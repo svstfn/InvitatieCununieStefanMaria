@@ -5,7 +5,6 @@ const CONFIG = {
   heroImage: "imagini/miri1.JPG",
   eventDateISO: "2026-07-31T12:00:00",
   eventSpanText: "31 Iulie 2026, ora 15:30 – 2 August 2026, ora 12:00",
-  birthdayNote: "Pe 1 August sărbătorim și ziua de naștere a lui Stefan.",
   ceremony: {
     place: "Primăria Ocna Sibiului",
     time: "12:00",
@@ -45,7 +44,6 @@ function injectConfig() {
   document.getElementById("footer-names").textContent = `${CONFIG.brideName} & ${CONFIG.groomName}`;
 
   document.getElementById("event-span-text").textContent = CONFIG.eventSpanText;
-  document.getElementById("birthday-note").textContent = CONFIG.birthdayNote;
 
   document.getElementById("ceremony-place").textContent = CONFIG.ceremony.place;
   document.getElementById("ceremony-time").textContent = CONFIG.ceremony.time;
@@ -61,7 +59,7 @@ function injectConfig() {
   }
 
   document.getElementById("rsvp-deadline").textContent =
-    `Te rugăm să ne confirmi prezența până pe ${formatDeadline(CONFIG.rsvpDeadline)}.`;
+    `Te rugăm să ne confirmi prezența până la ${formatDeadline(CONFIG.rsvpDeadline)}.`;
 }
 
 function setupDetailCard(prefix, data) {
@@ -199,7 +197,7 @@ function showSuccessMessage(prezenta) {
       "<p>Îți mulțumim! Răspunsul tău a fost trimis. Abia așteptăm să sărbătorim împreună!</p>";
   } else {
     successEl.innerHTML =
-      "<p>Îți mulțumim! Răspunsul tău a fost trimis. Ne pare rău că nu poți fi alături de noi.</p>";
+      "<p>Îți mulțumim! Răspunsul tău a fost trimis. Ne pare rău că nu ne poți fi alături.</p>";
   }
 }
 
