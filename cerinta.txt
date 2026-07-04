@@ -1,0 +1,35 @@
+Data eveniment 31.07.2026
+Nume Mire: Stefan
+Nume Mireasa: Maria
+La petrecere se va sarbatori doar cununia civila si zilele de nastere a mirelui(01.08.2026)
+Evenimentul va avea loc intre 31.07.2026 ora 15.30 si 02.08.2026 ora 12
+Locatie Petrecerea: Pensiunea Titel Rasinari https://maps.app.goo.gl/DawPc9VknjypN71x5
+Cununia civila: Primaria Ocna Sibiului https://maps.app.goo.gl/DLThy8bBFZVLbdEEA 31.07.2026 ora 12:00
+
+Vreau o invitatie html cu formular la sfarsit care sa stockeze gratuit undeva raspunsurile sa le pot accessa dupa
+daca ai nevoie de logare google anunta.
+
+Text propus de miri:
+După o perioadă intensă de teste, negocieri și nenumărate cafele împreună, am decis să semnăm contractul pe termen nelimitat!
+Cu mare bucurie (și fără nicio presiune… aproape), vă invităm să fiți alături de noi la cununia noastră civilă, unde promitem să spunem “DA” fără să cerem timp de gândire.
+Veniți să ne fiți martori, să ne aplaudați curajul și să sărbătorim împreună începutul celei mai frumoase aventuri!
+
+In folderul imagini: gasesti 4 poze cu miri si 2 cu locatile.
+
+Adauga fundal tematic.
+
+Intrebari pentru confirma prezenta:
+Nume si prenume: text
+
+Vei fi alaturi de noi ? vreau mai multe optiuni: 
+Da, de vineri pe sambata
+Da de vineri pe duminica
+Din pacate, nu pot
+
+Numar persoane (ramane ca acum)
+
+scoate preferinta meniu
+
+ramane si zona mesaj pentru miri
+
+LINK WEB APP: https://script.google.com/macros/s/AKfycbyZ3Xqb6JV3cEY8q9F8T5KI9qWMcHOUAFpMDBCuZ-6mP1fhLBummXj4lSUcN7P7Fee6Zw/exec

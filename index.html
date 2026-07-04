@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maria &amp; Stefan — Invitație</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="hero" id="hero">
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__inner fade-in">
+      <p class="hero__eyebrow">Spunem DA</p>
+      <h1 class="hero__names">
+        <span id="bride-name">Maria</span>
+        <span class="hero__amp" aria-hidden="true">&amp;</span>
+        <span id="groom-name">Stefan</span>
+      </h1>
+      <p class="hero__subtitle">Vă invităm la cununia noastră civilă</p>
+      <p class="hero__date" id="event-date">31 Iulie 2026</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section intro fade-in" aria-labelledby="intro-heading">
+      <div class="container">
+        <h2 id="intro-heading" class="section__title visually-hidden">Mesaj de la miri</h2>
+        <div class="intro__text">
+          <p>După o perioadă intensă de teste, negocieri și nenumărate cafele împreună, am decis să semnăm contractul pe termen nelimitat!</p>
+          <p>Cu mare bucurie (și fără nicio presiune… aproape), vă invităm să fiți alături de noi la cununia noastră civilă, unde promitem să spunem „DA” fără să cerem timp de gândire.</p>
+          <p>Veniți să ne fiți martori, să ne aplaudați curajul și să sărbătorim împreună începutul celei mai frumoase aventuri!</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="divider" aria-hidden="true">
+          <svg viewBox="0 0 240 24" xmlns="http://www.w3.org/2000/svg" role="img">
+            <path d="M0 12h80M160 12h80M108 12c-4-8-8-12-12-16 4 8 8 12 12 16 4-8 8-12 12-16-4 8-8 12-12 16" fill="none" stroke="currentColor" stroke-width="1"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section fade-in" aria-labelledby="gallery-heading">
+      <div class="container">
+        <h2 id="gallery-heading" class="section__title">Noi doi</h2>
+        <p class="gallery__intro">Câteva momente din povestea noastră</p>
+        <div class="gallery-frame">
+          <div class="gallery-frame__mat">
+            <div class="gallery-carousel" id="gallery-carousel" aria-live="polite">
+              <figure class="gallery-carousel__slide is-active" data-full="imagini/miri2.JPG">
+                <img src="imagini/miri2.JPG" alt="Maria și Stefan" loading="lazy">
+              </figure>
+              <figure class="gallery-carousel__slide" data-full="imagini/miri3.JPG">
+                <img src="imagini/miri3.JPG" alt="Maria și Stefan" loading="lazy">
+              </figure>
+              <figure class="gallery-carousel__slide" data-full="imagini/miri4.JPG">
+                <img src="imagini/miri4.JPG" alt="Maria și Stefan" loading="lazy">
+              </figure>
+            </div>
+          </div>
+          <div class="gallery-frame__dots" id="gallery-dots" aria-hidden="true"></div>
+        </div>
+      </div>
+      <div class="lightbox" id="lightbox" hidden>
+        <button type="button" class="lightbox__backdrop" id="lightbox-backdrop" aria-label="Închide"></button>
+        <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Închide">&times;</button>
+        <img class="lightbox__img" id="lightbox-img" alt="">
+      </div>
+    </section>
+
+    <section class="section countdown-section fade-in" aria-labelledby="countdown-heading">
+      <div class="container">
+        <h2 id="countdown-heading" class="section__title">Până la marele zi</h2>
+        <div class="countdown" id="countdown" aria-live="polite">
+          <div class="countdown__item">
+            <span class="countdown__value" id="countdown-days">0</span>
+            <span class="countdown__label">Zile</span>
+          </div>
+          <div class="countdown__item">
+            <span class="countdown__value" id="countdown-hours">00</span>
+            <span class="countdown__label">Ore</span>
+          </div>
+          <div class="countdown__item">
+            <span class="countdown__value" id="countdown-minutes">00</span>
+            <span class="countdown__label">Minute</span>
+          </div>
+          <div class="countdown__item">
+            <span class="countdown__value" id="countdown-seconds">00</span>
+            <span class="countdown__label">Secunde</span>
+          </div>
+        </div>
+        <p class="countdown__today visually-hidden" id="countdown-today">Astăzi ne cununăm!</p>
+      </div>
+    </section>
+
+    <section class="section event-span fade-in" aria-labelledby="event-span-heading">
+      <div class="container">
+        <h2 id="event-span-heading" class="section__title">Despre celebrare</h2>
+        <div class="event-span__card">
+          <p class="event-span__dates" id="event-span-text"></p>
+          <p class="event-span__note" id="birthday-note"></p>
+          <p class="event-span__desc">La petrecere sărbătorim cununia civilă și ziua de naștere a lui Stefan.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section details fade-in" aria-labelledby="details-heading">
+      <div class="container">
+        <h2 id="details-heading" class="section__title">Detalii eveniment</h2>
+        <div class="details__grid">
+          <article class="detail-card" id="ceremony-card">
+            <div class="detail-card__photo">
+              <img id="ceremony-photo" src="imagini/primarie.jpg" alt="Primăria Ocna Sibiului" loading="lazy">
+            </div>
+            <div class="detail-card__body">
+              <h3 class="detail-card__title">Cununia Civilă</h3>
+              <p class="detail-card__place" id="ceremony-place"></p>
+              <p class="detail-card__time"><span class="detail-card__time-label">Ora:</span> <span id="ceremony-time"></span></p>
+              <a class="detail-card__map" id="ceremony-map" href="#" target="_blank" rel="noopener noreferrer">Vezi harta</a>
+            </div>
+          </article>
+          <article class="detail-card" id="party-card">
+            <div class="detail-card__photo">
+              <img id="party-photo" src="imagini/locatie.jpg" alt="Pensiunea Titel Rășinari" loading="lazy">
+            </div>
+            <div class="detail-card__body">
+              <h3 class="detail-card__title">Petrecerea</h3>
+              <p class="detail-card__place" id="party-place"></p>
+              <p class="detail-card__time"><span class="detail-card__time-label">Început:</span> <span id="party-time"></span></p>
+              <a class="detail-card__map" id="party-map" href="#" target="_blank" rel="noopener noreferrer">Vezi harta</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rsvp fade-in" aria-labelledby="rsvp-heading">
+      <div class="container container--narrow">
+        <h2 id="rsvp-heading" class="section__title">Confirmă prezența</h2>
+        <p class="rsvp__deadline" id="rsvp-deadline"></p>
+
+        <div id="rsvp-form-wrapper">
+          <form id="rsvp-form" novalidate>
+            <div class="form-group">
+              <label for="nume">Nume și prenume</label>
+              <input type="text" id="nume" name="nume" required autocomplete="name">
+              <span class="form-error" id="error-nume" role="alert"></span>
+            </div>
+
+            <fieldset class="form-group">
+              <legend>Vei fi alături de noi?</legend>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="prezenta" value="Da, de vineri pe sâmbătă" required>
+                  <span>Da, de vineri pe sâmbătă</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="prezenta" value="Da, de vineri pe duminică">
+                  <span>Da, de vineri pe duminică</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="prezenta" value="Nu">
+                  <span>Din păcate, nu pot</span>
+                </label>
+              </div>
+              <span class="form-error" id="error-prezenta" role="alert"></span>
+            </fieldset>
+
+            <div class="form-group form-group--conditional" id="group-persoane" hidden>
+              <label for="persoane">Număr de persoane</label>
+              <input type="number" id="persoane" name="persoane" min="1" value="1">
+              <span class="form-error" id="error-persoane" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="mesaj">Un mesaj pentru miri</label>
+              <textarea id="mesaj" name="mesaj" rows="4"></textarea>
+            </div>
+
+            <div class="honeypot" aria-hidden="true">
+              <label for="website">Website</label>
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+
+            <button type="submit" class="btn btn--primary" id="rsvp-submit">Trimite răspunsul</button>
+            <p class="form-status" id="form-status" role="status"></p>
+          </form>
+        </div>
+        <iframe name="rsvp-target" id="rsvp-target" title="" class="visually-hidden" tabindex="-1"></iframe>
+
+        <div id="rsvp-success" class="rsvp-success" hidden></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__thanks">Vă mulțumim din suflet pentru că sunteți parte din povestea noastră.</p>
+      <p class="footer__signoff">
+        Cu drag,<br>
+        <span id="footer-names">Maria &amp; Stefan</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
