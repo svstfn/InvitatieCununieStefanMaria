@@ -1,3 +1,4 @@
+// assets-v3 — UTF-8
 // Editează CONFIG dacă se schimbă datele evenimentului sau URL-ul Apps Script.
 const CONFIG = {
   brideName: "Maria",
